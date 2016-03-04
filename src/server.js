@@ -7,7 +7,6 @@ import path from 'path';
 const app = new Express();
 
 // Import required modules
-import { fetchComponentData } from './util/fetchData';
 import posts from './routes/post.routes';
 import dummyData from './dummyData';
 import serverConfig from './config';
