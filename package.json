@@ -12,7 +12,8 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js && npm run minify",
     "clean": "rimraf static/dist",
     "slate": "rimraf node_modules && npm install",
-    "lint": "eslint client server shared"
+    "lint": "eslint client server shared",
+    "postinstall": "npm install"
   },
   "pre-commit": [
     "lint",
@@ -77,9 +78,6 @@
     "rimraf": "^2.5.1",
     "style-loader": "^0.13.0",
     "supertest": "^1.1.0",
-    "webpack": "^1.12.12",
-    "webpack-dev-middleware": "^1.5.1",
-    "webpack-hot-middleware": "^2.6.4"
   },
   "engines": {
     "node": ">=4"
